@@ -1,0 +1,156 @@
+<h3>{{ section.settings.text1 }}</h3>
+<div class="container" id="slider1">
+{% for block in section.blocks %}
+
+  {% if block.settings.enable_img%}
+
+  <div class="rr">
+  <img src="{{ block.settings.img1 | img_url:"200x"}}" class="imgg" />  
+<div class="textslick ss_{{block.settings.align_text}}"> <h3>{{block.settings.head1}}</h3></div></div>
+
+
+  {% endif %}
+
+ {% endfor %}
+</div>
+
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+// slick slider for footerslider
+
+$(document).ready(function(){      
+$('#slider1').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true,
+dots: true,
+infinite: true,
+freeScroll: true,
+autoplaySpeed: 1500
+});});
+
+</script>
+
+<style>
+.imgg
+{
+height:300px;
+ width:100%;
+}
+
+.container
+{
+  position:relative;
+}
+  .rr
+{
+  position:relative;
+}
+.textslick
+{
+  position:absolute;
+  top:8px;
+}
+
+
+.textslick.ss_left
+{
+top: 8px;
+left: 16px;
+font-size: 18px;
+  
+}
+ .textslick.ss_right
+{
+  top: 8px;
+right: 16px;
+font-size: 18px;
+  
+}
+ .textslick.ss_center
+{
+   top: 50%;
+width: 100%;
+text-align: center;
+font-size: 18px;
+}
+</style>
+
+
+{% schema %}
+{
+  "name": "Sliders",
+  "settings": [
+
+{
+      "type":"text",
+      "id":"text1",
+      "label":"Heading"
+  }
+
+],
+
+"blocks":[
+      {
+
+          "type":"gallery",
+          "name":"Select gallery",
+          "settings":
+                  [
+                  {
+          
+                      "type":"checkbox",
+                      "id":"enable_img",
+                      "label":"Enable gallery image"	
+                  },
+
+                  {
+                      "type":"image_picker",
+                      "id":"img1",
+                      "label":"select slider image"
+
+                  },
+                  {
+                      "type": "text",    
+                      "id": "head1",
+                      "label": "Text"
+
+                  },
+                  {
+                      "type": "select",
+                      "id": "align_text",
+                      "label": "Text alignment",
+                      "default": "left",
+                      "options": [
+                  {
+                  "value": "left",
+                  "label": "Left"
+                  },
+                  {
+                  "value": "center",
+                  "label": "Center"
+                  },
+                  {
+                  "value": "right",
+                  "label": "Right"
+                  }]
+
+}]
+     
+}],
+"presets":
+[{
+
+      "name":"sliders-try",
+      "category":"collection"
+
+}]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

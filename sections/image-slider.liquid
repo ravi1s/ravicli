@@ -1,0 +1,50 @@
+<div>
+  <div>
+     <img src="{{ section.settings.testi-img | img_url }}">
+    wwew
+    </a>
+  </div>
+</div>
+ 
+{% schema %}
+  {
+    "name": "Multiple Blocks",
+    "blocks":[
+      {
+        "type": "block-1",
+        "name": "Block 1",
+        "settings": [
+          {
+            "type":"image_picker",
+               "id":"testi-img",
+               "label":"Logo image"
+          }
+        ]
+      },
+      {
+        "type": "block-2",
+        "name": "Block 2",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+     "presets": [
+{
+"name": "ravi",
+"category": "ADVANCED LAYOUT"
+}
+]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

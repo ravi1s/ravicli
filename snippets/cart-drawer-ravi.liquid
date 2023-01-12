@@ -1,0 +1,115 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
+<div class="aq-content">
+<div class="main-drawer">
+  <div class="drawer-header">
+<!--   <span class="cart-drawer-heading"><h3>Cart Drawer</h3></span> -->
+  <span class="close-cart-drawer">X</span>
+  </div>
+          <div class="drawer-content">{% section 'main-cart-items' %}</div>
+          {% section 'main-cart-footer' %}
+  
+</div>
+</div>
+<style>
+  .main-drawer.show {
+    display: flex!important;
+}
+  .aq-content{
+        position: absolute;
+        height: 100%;
+    width: 100%;
+  }
+  td.cart-item__quantity {
+    padding-left: 5rem;
+}
+  td.cart-item__details {
+    padding-left: 0rem !important;
+    white-space: nowrap;
+}
+/*   tr {
+    width: 100px;
+} */
+  .quantity {
+    width: calc(11rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+    min-height: calc((var(--inputs-border-width) * 2) + 3.5rem);
+}
+  td.cart-item__details {
+    width: 3px;
+    margin-left: 3px !important;
+}
+  .cart-item__image-container {
+    width: 70px;
+    margin-left: -19px;
+        margin-right: 9px;
+}
+  .main-drawer {
+    width: 477px;
+    height: 100%;
+    z-index: 111;
+    background-color: pink;
+    right: 0;
+    overflow-x: auto;
+    display:none; 
+    position: fixed;
+}
+  .drawer-header{
+    display: inline-flex;
+  }
+  span.cart-drawer-heading {
+    margin-left: 32px;
+    margin-top: 12px;
+}
+  span.close-cart-drawer {
+    margin-top: 16px;
+    margin-left: 422px;
+    font-size: 28px;
+        cursor: pointer;
+}
+  h1.title.title--primary {
+    font-size: 23px;
+}
+  a.underlined-link {
+    font-size: 12px;
+}
+  .cart-item__name {
+    overflow: hidden;
+/*     white-space: nowrap; */
+    width:30px;
+}
+  tr#CartItem {
+    display: inline-flex;
+}
+  cart-items.page-width.section-main-cart-items-padding {
+    margin-top: -95px;
+    margin-left: -11px;
+}
+  td.cart-item__quantity {
+    padding-left: 3rem !important;
+}
+  .main-drawer{
+    visibility: visible;
+    transform: translate(0);
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#cart-icon-bubble").click(function(){
+    $(".main-drawer").show();
+  });
+  $('.close-cart-drawer').click(function(){
+  $('.main-drawer').hide();
+  });
+});
+
+  // For display block
+  // $(document).ready(function(){
+  // $("#cart-icon-bubble").click(function(){
+  //   $(".main-drawer").css("display","block");
+  // });
+  //    });
+</script>

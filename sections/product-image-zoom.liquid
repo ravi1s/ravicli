@@ -1,0 +1,32 @@
+<div class="main-img">
+  <img src="{{ section.settings.zeva_image_1 | img_url: 'x200' }}" />
+</div>
+{% schema %}
+  {
+    "name": "image zoom-in effect",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"zeva_image_1",
+        "label":"image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product image Zoom efect",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  img:hover{
+   height: 235px;
+}
+  }
+</style>
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

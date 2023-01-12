@@ -1,0 +1,25 @@
+<div class="popup-hide-show">
+{% comment %} <a href="https://moneyhiesst.myshopify.com/account/login?return_url=%2Faccount"> {% endcomment %}
+<svg class="Icon Icon--account" role="presentation" viewBox="0 0 20 20" style="height: 20px; position: relative; top: 11px; cursor:pointer;">
+      <g transform="translate(1 1)" stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <path d="M0 18c0-4.5188182 3.663-8.18181818 8.18181818-8.18181818h1.63636364C14.337 9.81818182 18 13.4811818 18 18"></path>
+        <circle cx="9" cy="4.90909091" r="4.90909091"></circle>
+      </g>
+    </svg>
+<!-- </a> -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".popup-hide-show").click(function(){
+    $("#login-popup").show();
+  });
+});
+</script>
+<script>
+  $(document).ready(function(){
+  $('.close_announce_bar').click(function(){
+  $('#login-popup').hide();
+  })
+  });
+</script>

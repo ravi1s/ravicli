@@ -1,0 +1,431 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hands-form-a-heart-shape-against-green-leaves.jpg",
+        "image_2": "shopify:\/\/shop_images\/a-woman-in-a-summer-dress-walks-through-a-corridor.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16630505543045ead8": {
+      "type": "slickslider",
+      "settings": {
+        "text1": ""
+      }
+    },
+    "16630701819a62ea77": {
+      "type": "slideshow",
+      "blocks": {
+        "1663070181391c8ae3-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "1663070181391c8ae3-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "c2ddc829-c7f7-4a40-a140-a6244f11f26f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1663070181391c8ae3-0",
+        "1663070181391c8ae3-1",
+        "c2ddc829-c7f7-4a40-a140-a6244f11f26f"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "166309420436bd866f": {
+      "type": "text-demo",
+      "disabled": true,
+      "settings": {
+        "myimage": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg"
+      }
+    },
+    "16633262730c458cba": {
+      "type": "text-demo",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "166333067661da9211": {
+      "type": "text-demo",
+      "blocks": {
+        "803fb956-e8ea-4dab-b690-3054282b1da7": {
+          "type": "gallery",
+          "settings": {
+            "myimage": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg"
+          }
+        },
+        "e57de7be-065d-4104-bc49-55c8aa74ec87": {
+          "type": "gallery",
+          "settings": {
+            "myimage": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg"
+          }
+        },
+        "da162eb5-73de-441a-8f78-f88af536f659": {
+          "type": "gallery",
+          "settings": {
+            "myimage": "shopify:\/\/shop_images\/retail-shopping-package.jpg"
+          }
+        },
+        "b3169866-6561-41f7-9088-ffc1a9681a1b": {
+          "type": "gallery",
+          "settings": {
+            "myimage": "shopify:\/\/shop_images\/tie-clip.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "803fb956-e8ea-4dab-b690-3054282b1da7",
+        "e57de7be-065d-4104-bc49-55c8aa74ec87",
+        "da162eb5-73de-441a-8f78-f88af536f659",
+        "b3169866-6561-41f7-9088-ffc1a9681a1b"
+      ],
+      "settings": {
+      }
+    },
+    "1663675091754a5646": {
+      "type": "slickslider",
+      "disabled": true,
+      "blocks": {
+        "c22f37fd-f74f-47f8-9a2e-0ae6b416e036": {
+          "type": "gallery",
+          "settings": {
+            "enable_img": true,
+            "img1": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "head1": "Hello",
+            "align_text": "left"
+          }
+        },
+        "0017a354-d582-4f30-98c3-a1aac1046240": {
+          "type": "gallery",
+          "settings": {
+            "enable_img": true,
+            "img1": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg",
+            "head1": "Welcome",
+            "align_text": "right"
+          }
+        },
+        "a21bf4bf-0e53-4975-9fae-0c438472b5b0": {
+          "type": "gallery",
+          "settings": {
+            "enable_img": true,
+            "img1": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
+            "head1": "",
+            "align_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "c22f37fd-f74f-47f8-9a2e-0ae6b416e036",
+        "0017a354-d582-4f30-98c3-a1aac1046240",
+        "a21bf4bf-0e53-4975-9fae-0c438472b5b0"
+      ],
+      "settings": {
+        "text1": ""
+      }
+    },
+    "4db566dd-edcb-4a5a-961b-2959fa81d190": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Winter Clothes",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "winter-colthes",
+        "products_to_show": 7,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3636867c-39f4-48aa-9da4-7f4702a734b2": {
+      "type": "product-image-zoom",
+      "settings": {
+        "zeva_image_1": "shopify:\/\/shop_images\/retail-shopping-package.jpg"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text",
+    "featured_collection",
+    "collage",
+    "video",
+    "multicolumn",
+    "16630505543045ead8",
+    "16630701819a62ea77",
+    "166309420436bd866f",
+    "16633262730c458cba",
+    "166333067661da9211",
+    "1663675091754a5646",
+    "4db566dd-edcb-4a5a-961b-2959fa81d190",
+    "3636867c-39f4-48aa-9da4-7f4702a734b2"
+  ]
+}
